@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Interfaces;
+using System.ComponentModel;
 
 namespace DesignPatterns.Patterns.Creational;
 
@@ -15,6 +16,7 @@ namespace DesignPatterns.Patterns.Creational;
 /// 
 /// <see cref="https://metanit.com/sharp/patterns/2.2.php"/>
 /// </remarks>
+[Description("Абстрактная фабрика: Создание семейств связанных или зависимых объектов без указания их конкретных классов.\r\n\r\n Порождающий паттерн, который предоставляет интерфейс для создания семейств взаимосвязанных объектов \r\n с определенными интерфейсами без указания конкретных типов данных объектов.\r\n Шаблон применяется в случаях, когда программа должна быть не зависимой от процессов и типов создаваемых новых объектов, \r\n а также, когда необходимо создавать группы взаимосвязанных объектов.")]
 internal class AbstractFactory : IPattern
 {
     /// <summary>

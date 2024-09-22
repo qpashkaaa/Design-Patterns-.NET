@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Interfaces;
+using System.ComponentModel;
 
 namespace DesignPatterns.Patterns.Creational;
 
@@ -13,6 +14,7 @@ namespace DesignPatterns.Patterns.Creational;
 /// 
 /// <see cref="https://metanit.com/sharp/patterns/2.4.php"/>
 /// </remarks>
+[Description("Прототип: Создание новых объектов путем копирования существующих экземпляров (клонирование).\r\n\r\nПаттерн Прототип (Prototype) позволяет создавать объекты на основе уже ранее созданных объектов-прототипов. \r\nТо есть по сути данный паттерн предлагает технику клонирования объектов.")]
 internal class Prototype : IPattern
 {
     /// <summary>

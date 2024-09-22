@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Interfaces;
+using System.ComponentModel;
 
 namespace DesignPatterns.Patterns.Structural;
 
@@ -13,6 +14,7 @@ namespace DesignPatterns.Patterns.Structural;
 /// 
 /// <see cref="https://metanit.com/sharp/patterns/4.4.php"/>
 /// </remarks>
+[Description("Компоновщик: Организация объектов в древовидную структуру для представления иерархий \"часть-целое\".\r\n\r\nПаттерн Компоновщик (Composite) объединяет группы объектов в древовидную структуру \r\nпо принципу \"часть-целое\" и позволяет клиенту одинаково работать как с отдельными объектами, так и с группой объектов.")]
 internal class Composite : IPattern
 {
     /// <summary>

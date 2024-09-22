@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Interfaces;
+using System.ComponentModel;
 
 namespace DesignPatterns.Patterns.Structural;
 
@@ -14,6 +15,7 @@ namespace DesignPatterns.Patterns.Structural;
 /// 
 /// <see cref="https://metanit.com/sharp/patterns/4.6.php"/>
 /// </remarks>
+[Description("Мост: Разделение абстракции и ее реализации так, чтобы они могли изменяться независимо.\r\n\r\nСтруктурный шаблон проектирования, \r\nкоторый позволяет отделить абстракцию от реализации таким образом, чтобы и абстракцию, и реализацию можно было изменять независимо друг от друга.\r\nШаблон «Мост» использует инкапсуляцию, агрегирование и может использовать наследование для того, чтобы разделить ответственность между классами.")]
 internal class Bridge : IPattern
 {
     /// <summary>

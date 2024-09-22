@@ -1,5 +1,7 @@
 ﻿using DesignPatterns.Handler;
 using DesignPatterns.Interfaces;
+using System.ComponentModel;
+using System.Reflection;
 
 namespace DesignPatterns.Models;
 internal class CompositePatternHandler : ICompositePatternHandler
@@ -15,12 +17,24 @@ internal class CompositePatternHandler : ICompositePatternHandler
     {
         foreach (var pattern in _patterns) 
         {
-            Console.WriteLine("------------------------------------");
-            Console.WriteLine($"{pattern.GetType().Name} example:\n");
+            var description = pattern.GetType().GetCustomAttribute<DescriptionAttribute>()?.Description;
+
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine($"{pattern.GetType().Name}:\n");
+
+            if (description != null)
+            {
+                Console.WriteLine(new string('+', 50));
+                Console.WriteLine($"Description: {description}");
+                Console.WriteLine(new string('+', 50));
+                Console.WriteLine("\n");
+            }
+
+            Console.WriteLine("Example:\n");
 
             pattern.ShowExample();
 
-            Console.WriteLine("------------------------------------");
+            Console.WriteLine(new string('-', 50));
             Console.WriteLine("\n\n");
         }
     }

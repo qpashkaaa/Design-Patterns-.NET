@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Interfaces;
+using System.ComponentModel;
 
 namespace DesignPatterns.Patterns.Creational;
 
@@ -14,6 +15,7 @@ namespace DesignPatterns.Patterns.Creational;
 /// 
 /// <see cref="https://metanit.com/sharp/patterns/2.1.php"/>
 /// </remarks>
+[Description("Фабричный метод: Определение интерфейса для создания объекта, но позволение подклассам изменять тип создаваемого объекта.\r\n\r\nЭто порождающий паттерн, который определяет интерфейс для создания объектов некоторого класса, \r\nно непосредственное решение о том, объект какого класса создавать происходит в подклассах. \r\nТо есть паттерн предполагает, что базовый класс делегирует создание объектов классам-наследникам.")]
 internal class FactoryMethod : IPattern
 {
     /// <summary>

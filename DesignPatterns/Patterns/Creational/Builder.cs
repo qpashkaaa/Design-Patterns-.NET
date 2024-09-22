@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Interfaces;
+using System.ComponentModel;
 
 namespace DesignPatterns.Patterns.Creational;
 
@@ -13,6 +14,7 @@ namespace DesignPatterns.Patterns.Creational;
 /// 
 /// <see cref="https://metanit.com/sharp/patterns/2.5.php"/>
 /// </remarks>
+[Description("Строитель: Поэтапное конструирование сложного объекта.\r\n\r\nПаттерн проектирования, который инкапсулирует создание объекта и позволяет разделить его на различные этапы.\r\nОн отделяет конструирование сложного объекта от его представления так, что в результате одного и того же процесса конструирования могут получаться разные представления.")]
 internal class Builder : IPattern
 {
     /// <summary>

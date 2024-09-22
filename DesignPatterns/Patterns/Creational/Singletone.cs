@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Interfaces;
+using System.ComponentModel;
 
 namespace DesignPatterns.Patterns.Creational;
 
@@ -12,6 +13,7 @@ namespace DesignPatterns.Patterns.Creational;
 /// 
 /// <see cref="https://metanit.com/sharp/patterns/2.3.php"/>
 /// </remarks>
+[Description("Одиночка: Обеспечение единственного экземпляра класса и глобальная точка доступа к нему.\r\n\r\nПаттерн, который гарантирует, что для определенного класса будет создан только один объект, а также предоставит к этому объекту точку доступа.")]
 internal class Singletone : IPattern
 {
     /// <summary>

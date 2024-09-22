@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Interfaces;
+using System.ComponentModel;
 
 namespace DesignPatterns.Patterns.Structural;
 
@@ -15,6 +16,7 @@ namespace DesignPatterns.Patterns.Structural;
 /// 
 /// <see cref="https://metanit.com/sharp/patterns/4.2.php"/>
 /// </remarks>
+[Description("Адаптер: Преобразование интерфейса одного класса в интерфейс другого, который ожидают клиенты.\r\n\r\nПаттерн Адаптер (Adapter) предназначен для преобразования интерфейса одного класса в интерфейс другого. \r\nБлагодаря реализации данного паттерна можноы использовать вместе классы с несовместимыми интерфейсами.\r\n«Адаптер», предназначен для организации использования функций объекта, недоступного для модификации, через специально созданный интерфейс. \r\nДругими словами, он позволяет объектам с несовместимыми интерфейсами работать вместе.")]
 internal class Adapter : IPattern
 {
     #region 1 вариант
