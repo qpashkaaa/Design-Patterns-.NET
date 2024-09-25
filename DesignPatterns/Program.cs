@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Interfaces;
 using DesignPatterns.Models;
+using DesignPatterns.Patterns.Behavioral;
 using DesignPatterns.Patterns.Creational;
 using DesignPatterns.Patterns.Structural;
 using System.Reflection;
@@ -22,7 +23,7 @@ internal class Program
         //    .Where(t => typeof(IPattern).IsAssignableFrom(t) && !t.IsInterface && !t.IsAbstract)
         //    .Select(Activator.CreateInstance).Cast<IPattern>());
 
-        var handler = new CompositePatternHandler(new List<IPattern> { new Proxy() });
+        var handler = new CompositePatternHandler(new List<IPattern> { new Iterator() });
 
         handler.Execute();
     }
