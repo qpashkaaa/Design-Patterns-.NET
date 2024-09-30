@@ -23,7 +23,7 @@ internal class Program
         //    .Where(t => typeof(IPattern).IsAssignableFrom(t) && !t.IsInterface && !t.IsAbstract)
         //    .Select(Activator.CreateInstance).Cast<IPattern>());
 
-        var handler = new CompositePatternHandler(new List<IPattern> { new Iterator() });
+        var handler = new CompositePatternHandler(new List<IPattern> { new Observer() });
 
         handler.Execute();
     }
