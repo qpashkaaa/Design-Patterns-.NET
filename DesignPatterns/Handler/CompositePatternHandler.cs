@@ -25,7 +25,7 @@ internal class CompositePatternHandler : ICompositePatternHandler
             if (description != null)
             {
                 Console.WriteLine(new string('+', 50));
-                Console.WriteLine($"Description: {description}");
+                Console.WriteLine($"{description}");
                 Console.WriteLine(new string('+', 50));
                 Console.WriteLine("\n");
             }
