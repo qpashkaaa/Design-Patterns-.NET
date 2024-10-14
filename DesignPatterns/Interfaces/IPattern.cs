@@ -1,4 +1,5 @@
 ﻿namespace DesignPatterns.Interfaces;
+
 internal interface IPattern
 {
     /// <summary>
